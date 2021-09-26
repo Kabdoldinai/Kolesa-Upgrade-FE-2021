@@ -1,8 +1,265 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f2f2f6;
+}
+
+.modal-container {
+    padding: 70px 0;
+}
+
+.modal-card {
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 16px;
+    max-width: 1039px;
+    min-height: 588px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.modal-card-content {
+    display: flex;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.preview-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.image-container {
+    padding: 56px 0 56px 56px;
+}
+
+.description-container {
+    padding: 64px 0 0 24px;
+    position: relative;
+}
+
+.padding-for-icon {
+    padding: 30.67px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 600;
+    margin: 8px 0 8px 0;
+    line-height: 32px;
+}
+
+.order-button {
+    padding: 8px 0;
+    width: 134px;
+    height: 36px;
+    background: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 24px;
+}
+
+.product-color {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+}
+
+.color-group {
+    display: inline-flex;
+}
+
+.color-box {
+    background: #fff;
+    border: 1px solid #cbcbcf;
+    border-radius: 8px;
+    margin: 8px 8px 0 0;
+    width: 96px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px;
+    color: #2a81dd;
+    cursor: pointer;
+}
+
+.blue {
+    background: #d6ecfb;
+    border: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.previe-image_2:active {
+    border: 1px solid #2a81dd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.details-description h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 24px 0 4px 0;
+}
+
+.details-description p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 24px 0;
+}
+
+.how-to-text h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.how-to-text p {
+    margin: 4px 0 64px 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.color-square {
+    display: inline-flex;
+    border-radius: 4px;
+    width: 23px;
+    height: 24px;
+    position: relative;
+}
+
+.blue-box {
+    background: #00458a;
+    position: absolute;
+}
+
+.beige-box {
+    background: #efe8d8;
+    position: absolute;
+}
+
+.gray-box {
+    background: #d4d4da;
+    position: absolute;
+}
+
+label[for=gray] {
+    margin-left: 30px;
+}
+
+label[for=beige] {
+    margin-left: 30px;
+}
+
+label[for=blue] {
+    margin-left: 30px;
+}
+
+.size-group {
+    display: flex;
+    margin-top: 8px;
+}
+
+.size-buttons {
+    margin-top: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.size label {
+    cursor: pointer;
+    color: #1c1819;
+    user-select: none;
+    padding: 1em;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    display: block;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.size-S {
+    background: #d6ecfb;
+    border-radius: 8px;
+    margin: 0 4px 0 0;
+}
+
+.size-M {
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    margin: 0 4px 0 0;
+}
+
+.size-L {
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.current-currency-info {
+    position: absolute;
+    background: #f0fafd;
+    border-radius: 16px;
+    width: 196px;
+    display: flex;
+}
+
+.current-currency {
+    display: flex;
+    justify-content: end;
+}
+
+.current-currency h4 {
+    color: #888b94;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 8px 0 8px 16px;
+}
+
+.iconShop {
+    margin: 22px 0 10px 32px;
+}
+
+.current-currency p {
+    margin: 0 0 0 16px;
+    color: #1c1819;
+    font-size: 16px;
+    line-height: 24px;
 }
