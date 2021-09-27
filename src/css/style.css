@@ -18,6 +18,13 @@ body {
     padding: 30px;
 }
 
+.modal-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-card-content {
     display: flex;
     position: relative;
@@ -89,7 +96,7 @@ body {
 }
 
 .color-group {
-    display: inline-flex;
+    display: flex;
     flex-flow: wrap;
 }
 
@@ -209,32 +216,20 @@ label[for=blue] {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 16px;
     font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-.size-S {
-    background: #d6ecfb;
-    border: 2px solid #d6ecfb;
+    background: #fff;
+    border: 2px solid #cfd5da;
     border-radius: 8px;
     margin: 0 4px 0 0;
-}
-
-.size-M {
-    border: 2px solid #e6e6e6;
-    border-radius: 8px;
-    margin: 0 4px 0 0;
-}
-
-.size-L {
-    border: 2px solid #e6e6e6;
-    border-radius: 8px;
 }
 
 input[type='radio'] {
     display: none;
+}
+
+input[type='radio']:checked + label {
+    background-color: #d6ecfb;
+    border: 2px solid #d6ecfb;
 }
 
 .current-currency-info {
