@@ -10,94 +10,89 @@
 </head>
 
 <body>
-    <section class="modal-container">
-        <div class="modal-card">
-            <div class="modal-card-content">
-                <div class="close">
-                    <img class="padding-for-icon" src="src/assets/close.svg" alt="close" width="18.67" height="18.67">
+
+    <div class="modal-card">
+        <div class="modal-card-content">
+            <div class="close">
+                <img src="src/assets/close.svg" alt="close" width=24px height="24px">
+            </div>
+            <div class="image-container">
+                <div class="main-image">
+                    <img src="/src/assets/product-image.jpg" alt="product-image" width="330" height="330">
                 </div>
-                <div class="image-container">
-                    <div class="main-image">
-                        <img src="/src/assets/product-image.jpg" alt="product-image" width="330" height="330">
+                <div class="preview-images">
+                    <img src="/src/assets/preview-image_1.jpg" alt="product-image-preview1">
+                    <img class="previe-image_2 active" src="/src/assets/previe-image_2.jpg"
+                        alt="product-image-preview2">
+                    <img src="/src/assets/preview-image_3.jpg" alt="product-image-preview1">
+                    <img src="/src/assets/preview-image_1.jpg" alt="product-image-preview1">
+                </div>
+            </div>
+            <div class="description-container">
+                <h2 class="title">Футболка "Эволюционируй или сдохни"</h2>
+                <div class="current-currency">
+                    <div class="current-currency-info">
+                        <div class="currency-decription">
+                            <p class="currency-txt">Твой баланс:</p>
+                            <p>3 945 баллов</p>
+                        </div>
+
+                        <div class="iconShop">
+                            <img class="shopBag" src="/src/assets/shop.svg" alt="shopIcon">
+                        </div>
                     </div>
-                    <div class="preview-images">
-                        <img src="/src/assets/preview-image_1.jpg" alt="product-image-preview1">
-                        <img class="previe-image_2" src="/src/assets/previe-image_2.jpg" alt="product-image-preview2">
-                        <img src="/src/assets/preview-image_3.jpg" alt="product-image-preview1">
-                        <img src="/src/assets/preview-image_1.jpg" alt="product-image-preview1">
+
+                </div>
+                <div class="price">100 баллов</div>
+                <button class="order-button">Заказать</button>
+
+                <div class="product-colors">
+                    <span class="product-color">Цвета:</span>
+                    <div class="color-group">
+                        <div class="color-box blue">
+                            <div class="color-square blue-box"></div>
+                            <label for="blue">Синий</label>
+                        </div>
+                        <div class="color-box beige">
+                            <div class="color-square beige-box"></div>
+                            <label for="beige">Бежевый</label>
+                        </div>
+                        <div class="color-box gray">
+                            <div class="color-square gray-box"></div>
+                            <label for="gray">Серый</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="size-buttons">
+                    <span class="size-title">Размер:</span>
+                    <div class="size-group">
+                        <div class="size size-S">
+                            <input checked type="radio" id="small" name="size" value="small">
+                            <label data-icon="S" for="size1">S</label>
+                        </div>
+                        <div class="size size-M">
+                            <input checked type="radio" id="medium" name="size" value="medium">
+                            <label data-icon="M" for="size2">M</label>
+                        </div>
+                        <div class="size size-L">
+                            <input checked type="radio" id="large" name="size" value="large">
+                            <label data-icon="L" for="size3">L</label>
+                        </div>
                     </div>
                 </div>
-                <div class="description-container">
-                    <h2 class="title">Футболка "Эволюционируй или сдохни"</h2>
-                    <div class="current-currency">
-                        <div class="current-currency-info">
-                            <div class="currency-decription">
-                                <h4>Твой баланс:</h4>
-                                <p>3 945 баллов</p>
-                            </div>
-
-                            <div class="iconShop">
-                                <img class="shopBag" src="/src/assets/shop.svg" alt="shopIcon">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">100 баллов</div>
-                    <button class="order-button">Заказать</button>
-
-                    <div class="product-colors">
-                        <span class="product-color">Цвета:</span>
-                        <div class="color-group">
-                            <div class="color-box blue">
-                                <div class="color-square blue-box"></div>
-                                <label for="blue">Синий</label>
-                            </div>
-                            <div class="color-box beige">
-                                <div class="color-square beige-box"></div>
-                                <label for="beige">Бежевый</label>
-                            </div>
-                            <div class="color-box gray">
-                                <div class="color-square gray-box"></div>
-                                <label for="gray">Серый</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="size-buttons">
-                        <span class="size-title">Размер:</span>
-                        <div class="size-group">
-                            <div class="size size-S">
-                                <input checked type="radio" id="small" name="size" value="small">
-                                <label data-icon="S" for="size1">
-                                    <p>S</p>
-                                </label>
-                            </div>
-                            <div class="size size-M">
-                                <input checked type="radio" id="medium" name="size" value="medium">
-                                <label data-icon="M" for="size2">
-                                    <p>M</p>
-                                </label>
-                            </div>
-                            <div class="size size-L">
-                                <input checked type="radio" id="large" name="size" value="large">
-                                <label data-icon="L" for="size3">
-                                    <p>L</p>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-description">
-                        <h4>Детали:</h4>
-                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза20%</p>
-                    </div>
-                    <div class="how-to-text">
-                        <h2>Как выбрать размер:</h2>
-                        <p>Написать дяде Рику для уточнения.</p>
-                    </div>
+                <div class="details-description">
+                    <h3>Детали:</h3>
+                    <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза20%</p>
+                </div>
+                <div class="how-to-text">
+                    <h3>Как выбрать размер:</h3>
+                    <p>Написать дяде Рику для уточнения.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
 </body>
 
 </html>

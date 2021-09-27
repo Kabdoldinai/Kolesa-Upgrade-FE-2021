@@ -7,19 +7,15 @@ body {
     background: #f2f2f6;
 }
 
-.modal-container {
-    padding: 70px 0;
-}
-
 .modal-card {
     top: 0;
     left: 0;
     background: #fff;
     border-radius: 16px;
     max-width: 1039px;
-    min-height: 588px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 30px;
 }
 
 .modal-card-content {
@@ -38,9 +34,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     cursor: pointer;
+}
+
+.preview-images img {
+    padding: 2px;
 }
 
 .image-container {
@@ -48,18 +47,15 @@ body {
 }
 
 .description-container {
-    padding: 64px 0 0 24px;
+    padding: 18px 0 0 24px;
     position: relative;
-}
-
-.padding-for-icon {
-    padding: 30.67px;
 }
 
 .title {
     font-size: 20px;
     font-weight: normal;
     line-height: 32px;
+    margin-bottom: 0;
 }
 
 .price {
@@ -89,22 +85,20 @@ body {
     font-size: 14px;
     line-height: 24px;
     display: block;
+    margin-bottom: 6px;
 }
 
 .color-group {
     display: inline-flex;
+    flex-flow: wrap;
 }
 
 .color-box {
     background: #fff;
     border: 1px solid #cbcbcf;
     border-radius: 8px;
-    margin: 8px 8px 0 0;
-    width: 96px;
-    height: 28px;
-    font-size: 14px;
-    line-height: 24px;
     padding: 8px;
+    margin: 0 4px;
     color: #2a81dd;
     cursor: pointer;
 }
@@ -117,13 +111,17 @@ body {
     color: #1c1819;
 }
 
-.previe-image_2:active {
+.gray {
+    padding-right: 12px;
+}
+
+.active {
     border: 1px solid #2a81dd;
     border-radius: 8px;
     cursor: pointer;
 }
 
-.details-description h4 {
+.details-description h3 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -136,7 +134,7 @@ body {
     margin: 0 0 24px 0;
 }
 
-.how-to-text h2 {
+.how-to-text h3 {
     margin: 0;
     font-weight: 600;
     font-size: 14px;
@@ -187,6 +185,7 @@ label[for=blue] {
 .size-group {
     display: flex;
     margin-top: 8px;
+    flex-flow: wrap;
 }
 
 .size-buttons {
@@ -195,16 +194,21 @@ label[for=blue] {
     display: inline-block;
 }
 
+.size-buttons span {
+    font-size: 14px;
+}
+
 .size label {
     cursor: pointer;
     color: #1c1819;
     user-select: none;
-    padding: 1em;
-    height: 40px;
-    width: 40px;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
     overflow: hidden;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 16px;
     font-size: 14px;
     line-height: 24px;
@@ -213,6 +217,7 @@ label[for=blue] {
 
 .size-S {
     background: #d6ecfb;
+    border: 2px solid #d6ecfb;
     border-radius: 8px;
     margin: 0 4px 0 0;
 }
@@ -238,6 +243,7 @@ input[type='radio'] {
     border-radius: 16px;
     width: 196px;
     display: flex;
+    margin-top: 8px;
 }
 
 .current-currency {
@@ -245,7 +251,7 @@ input[type='radio'] {
     justify-content: end;
 }
 
-.current-currency h4 {
+.current-currency .currency-txt {
     color: #888b94;
     font-weight: 400;
     font-size: 14px;
@@ -254,12 +260,12 @@ input[type='radio'] {
 }
 
 .iconShop {
-    margin: 22px 0 10px 32px;
+    margin: 14px 0 10px 25px;
 }
 
 .current-currency p {
     margin: 0 0 0 16px;
     color: #1c1819;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 12px;
 }
