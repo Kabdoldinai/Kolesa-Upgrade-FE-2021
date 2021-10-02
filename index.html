@@ -10,88 +10,280 @@
 </head>
 
 <body>
-    <div class="modal-container">
-        <div class="modal-card">
-            <div class="modal-card-content">
-                <div class="close">
-                    <img src="src/assets/close.svg" alt="close" width=24px height="24px">
+    <section class="container">
+        <div class="side-menu">
+            <div class="logo"><img src="/src/assets/main-logo.svg" alt="company-logo"></div>
+            <div class="side-menu_list">
+                <a href="#">Оргсхема</a>
+                <a href="#">Kolesa <span class="team-txt">Team</span></a>
+                <a href="#" class="selected-menu-txt"><span class="display-selected"></span>Kolesa Shop</a>
+                <a href="#">Картина компании</a>
+                <a href="#">Новости</a>
+                <a href="#">Education</a>
+                <a href="#">Guidelines</a>
+                <a href="#">Библиотека</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="top-nav">
+                <div class="search">
+                    <form>
+                        <input type="search" placeholder="Поиск">
+                    </form>
                 </div>
-                <div class="image-container">
-                    <div class="main-image">
-                        <img src="src/assets/product-image.jpg" alt="product-image" width="330" height="330">
-                    </div>
-                    <div class="preview-images">
-                        <img src="src/assets/preview-image_1.jpg" alt="product-image-preview1">
-                        <img class="previe-image_2 active" src="src/assets/previe-image_2.jpg"
-                            alt="product-image-preview2">
-                        <img src="src/assets/preview-image_3.jpg" alt="product-image-preview1">
-                        <img src="src/assets/preview-image_1.jpg" alt="product-image-preview1">
-                    </div>
-                </div>
-                <div class="description-container">
-                    <h2 class="title">Футболка "Эволюционируй или сдохни"</h2>
-                    <div class="current-currency">
-                        <div class="current-currency-info">
-                            <div class="currency-decription">
-                                <p class="currency-txt">Твой баланс:</p>
-                                <p>3 945 баллов</p>
-                            </div>
-
-                            <div class="iconShop">
-                                <img class="shopBag" src="src/assets/shop.svg" alt="shopIcon">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">100 баллов</div>
-                    <button class="order-button">Заказать</button>
-                    <div class="product-colors">
-                        <span class="product-color">Цвета:</span>
-                        <div class="color-group">
-                            <div class="color-box blue">
-                                <div class="color-square blue-box"></div>
-                                <label for="blue">Синий</label>
-                            </div>
-                            <div class="color-box beige">
-                                <div class="color-square beige-box"></div>
-                                <label for="beige">Бежевый</label>
-                            </div>
-                            <div class="color-box gray">
-                                <div class="color-square gray-box"></div>
-                                <label for="gray">Серый</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="size-buttons">
-                        <span class="size-title">Размер:</span>
-                        <div class="size-group">
-                            <div class="size">
-                                <input type="radio" id="small" name="size" value="small">
-                                <label for="small">S</label>
-                            </div>
-                            <div class="size">
-                                <input type="radio" id="medium" name="size" value="medium">
-                                <label for="medium">M</label>
-                            </div>
-                            <div class="size">
-                                <input type="radio" id="large" name="size" value="large">
-                                <label for="large">L</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-description">
-                        <h3>Детали:</h3>
-                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза20%</p>
-                    </div>
-                    <div class="how-to-text">
-                        <h3>Как выбрать размер:</h3>
-                        <p>Написать дяде Рику для уточнения.</p>
+                <div class="user">
+                    <img class="user-profile" src="/src/assets/user-profile.png" alt="user-avatar">
+                    <div class="user-info">
+                        <span class="user-name">Мортиджан</span>
+                        <p class="currency">300 баллов</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="banner" width="1038" height="335">
+                <img src="/src/assets/banner.png" width="100%" alt="banner">
+            </div>
+            <div class="score-buttons">
+                <a href="#" class="btn_ btn-green">
+                    <img src="/src/assets/plus-icon.svg" width="30" alt="plus-icon">
+                    <span>Получить баллы</span>
+                </a>
+                <a href="#" class="btn_ btn-yellow">
+                    <img src="/src/assets/question-icon.svg" width="30" alt="question-icon">
+                    <span>Как получить баллы</span></a>
+                <a href="#" class="btn_ btn-blue">
+                    <img src="/src/assets/gift-icon.svg" width="30" alt="gift-icon">
+                    <span>Подарить баллы</span>
+                </a>
+            </div>
+            <div class="filter-buttons">
+                <button class="btn_all_products" type="button">Все товары</button>
+                <button class="btn btn_clothes" type="button">Одежда</button>
+                <button class="btn btn_accessory" type="button">Аксессуары</button>
+            </div>
+            <div class="product-catalog">
+                <ul>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                            <span class="badge">new</span>
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Футболка "Эволюционируй или ...
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                            <span class="badge">new</span>
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Футболка "Эволюционируй или ...
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price price-red">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Футболка "Эволюционируй или ...
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                            <button class="button" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image">
+                            <img width="330" height="330" src="/src/assets/t-shirt.png" alt="product-img">
+                        </div>
+                        <div class="description">
+                            <div class="price">
+                                220 баллов
+                            </div>
+                            <h3 class="title">
+                                Свитшот
+                            </h3>
+                            <div class="hint">
+                                Размеры S/M/L
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="company-credit">
+                <span class="txt">© Kolesa Group</span>
+                <div class="sns-icons">
+                    <a href="#"><img src="/src/assets/instagram.svg" alt=""></a>
+                    <a href="#"><img src="/src/assets/youtube.svg" alt=""></a>
+                    <a href="#"><img src="/src/assets/vk.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="contact-company">
+                <div class="footer-txt">
+                    <span>Есть идеи что улучшить?<br>
+                        Не знаешь, с кем решить проблему?</span>
+                </div>
+                <button>Написать</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
