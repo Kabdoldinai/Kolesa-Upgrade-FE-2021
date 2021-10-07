@@ -1,13 +1,55 @@
-@import './resets';
-@import './variables';
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
+@import './blocks/menu.scss';
+@import './resets.scss';
+@import './variables.scss';
+@import './blocks/search.scss';
+@import './blocks/user.scss';
+@import './blocks/banner.scss';
+@import './blocks/score-btn.scss';
+@import './blocks/tabs-btn.scss';
+@import './blocks/card.scss';
+@import './blocks/description.scss';
+@import './blocks/image.scss';
+@import './blocks/footer.scss';
+@import './blocks/contact-company.scss';
+
+.bold {
+    font-weight: $font-semi-bold;
 }
 
-@mixin flexCenter ($direction) {
+.ml {
+    margin-left: 14px;
+}
+
+.ml-1 {
+    margin-left: 6px;
+}
+
+.mr {
+    margin-right: 16px;
+}
+
+.mb {
+    margin-bottom: 14px;
+}
+
+.mt {
+    margin-top: 16px;
+}
+
+.mt-2 {
+    margin-top: 24px;
+}
+
+.mt-5 {
+    margin-top: 8em;
+}
+
+.font-red-color {
+    color: $red-color;
+}
+
+.flex-row {
     display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: $direction;
+    flex-flow: wrap;
 }

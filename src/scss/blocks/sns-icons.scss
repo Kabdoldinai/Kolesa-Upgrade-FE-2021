@@ -1,0 +1,9 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.sns-icons {
+    @include flexCenter;
+}

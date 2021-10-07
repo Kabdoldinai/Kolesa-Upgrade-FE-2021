@@ -1,0 +1,25 @@
+.score-button {
+    border: none;
+    border-radius: 16px;
+    background: transparent;
+    min-width: 350px;
+    padding: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $large-font-size;
+    font-weight: $font-semi-bold;
+    flex-flow: wrap;
+
+    &--green {
+        background: $payed-green-color;
+    }
+
+    &--yellow {
+        background: $payed-yellow-color;
+    }
+
+    &--blue {
+        background: $payed-blue-color;
+    }
+}

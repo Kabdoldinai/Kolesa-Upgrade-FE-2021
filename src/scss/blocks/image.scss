@@ -1,0 +1,16 @@
+.image {
+    position: relative;
+
+    &__badge {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        font-size: $extra-small-font-size;
+        line-height: 20px;
+        background: $green-color;
+        color: $primary-color;
+        padding: 0 4px;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+}
