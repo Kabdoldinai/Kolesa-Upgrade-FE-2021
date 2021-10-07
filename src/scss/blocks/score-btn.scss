@@ -22,4 +22,9 @@
     &--blue {
         background: $payed-blue-color;
     }
+
+    &:hover {
+        box-shadow: 0 4px 6px 0px(0, 0, 0, 0.4);
+        background-color: #d1d2e6;
+    }
 }

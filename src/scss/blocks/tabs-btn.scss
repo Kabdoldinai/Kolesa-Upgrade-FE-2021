@@ -14,4 +14,9 @@
         font-weight: $font-regular;
         font-size: $small-font-size;
     }
+
+    &:hover {
+        background: $payed-blue-color;
+        border: none;
+    }
 }
