@@ -18,6 +18,8 @@ module.exports = {
                     'screen',
                     'mixin',
                     'include',
+                    'function',
+                    'return',
                     'if',
                     'else',
                     'extend',

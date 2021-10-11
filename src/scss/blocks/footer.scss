@@ -1,0 +1,27 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer {
+    background-color: $black-primary-color;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 16px 8px;
+    bottom: 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__company {
+        color: $primary-color;
+        font-weight: $font-regular;
+        font-size: $small-font-size;
+        line-height: 24px;
+    }
+}

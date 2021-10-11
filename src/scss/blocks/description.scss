@@ -1,0 +1,24 @@
+.description {
+    padding: 16px;
+
+    &__price {
+        font-weight: $font-semi-bold;
+        font-size: $extra-large-font-size;
+        line-height: 36px;
+        color: $blue-primary-color;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 4px;
+        font-size: $medium-font-size;
+        line-height: 24px;
+        font-weight: $font-semi-bold;
+    }
+
+    &__hint {
+        color: $gray-color;
+        font-size: $small-font-size;
+        line-height: 24px;
+    }
+}

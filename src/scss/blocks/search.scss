@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.search {
+    font-size: $medium-large-font-size;
+
+    input {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        padding: 12px 16px 9px 36px;
+        min-width: 300px;
+        background: #f2f2f3 url('/src/assets/search-icon.svg') no-repeat 9px center;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &--mt {
+        margin-top: 22px;
+    }
+}

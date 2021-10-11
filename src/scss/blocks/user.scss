@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.user {
+    font-size: $extra-small-font-size;
+    font-weight: $font-regular;
+    display: flex;
+
+    &__info {
+        margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__profile {
+        border-radius: 50%;
+    }
+
+    &__name {
+        line-height: 24px;
+        color: $blue-primary-color;
+    }
+}

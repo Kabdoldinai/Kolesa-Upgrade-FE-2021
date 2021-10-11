@@ -1,0 +1,22 @@
+.tab-button {
+    border: none;
+    border-radius: 8px;
+    min-width: 120px;
+    padding: 12px;
+    cursor: pointer;
+
+    &__transparent {
+        border: 1px solid rgb(223, 222, 222);
+        box-sizing: border-box;
+        border-radius: 8px;
+        background: $primary-color;
+        color: $blue-primary-color;
+        font-weight: $font-regular;
+        font-size: $small-font-size;
+    }
+
+    &:hover {
+        background: $payed-blue-color;
+        border: none;
+    }
+}
