@@ -8,9 +8,9 @@
         -webkit-box-sizing: content-box;
         padding: 12px 16px 9px 36px;
         min-width: 300px;
-        background: #f2f2f3 url('/src/assets/search-icon.svg') no-repeat 9px center;
-        -webkit-border-radius: 10em;
-        -moz-border-radius: 10em;
+        background: $white-darkest url('/src/assets/search-icon.svg') no-repeat 9px center;
+        -webkit-border-radius: 160px;
+        -moz-border-radius: 160px;
         border-radius: 8px;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
