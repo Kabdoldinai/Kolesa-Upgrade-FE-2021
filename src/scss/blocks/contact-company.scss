@@ -12,13 +12,12 @@
     font-weight: $font-regular;
 
     &__button {
+        @include flexCenter;
+
         box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
         border-radius: 8px;
         border: 0;
         color: $blue-primary-color;
-
-        @include flexCenter;
-
         padding: 12px 50px;
         cursor: pointer;
     }

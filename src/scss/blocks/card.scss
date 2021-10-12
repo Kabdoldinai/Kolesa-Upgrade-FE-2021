@@ -2,4 +2,30 @@
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     border-radius: 8px;
     width: 330px;
+
+    &:hover {
+        margin-top: 16px;
+
+        .description__price {
+            color: $red-color;
+        }
+
+        button {
+            visibility: visible;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 44px;
+        border: 0;
+        background: #2a81dd;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        visibility: hidden;
+    }
 }
